@@ -1,54 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .project-content {
-    padding: 20px;
-  }
-  
-  .project-content h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .project-content p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
+    font-family: 'Times New Roman', serif;
+    background-color: #2196F3; /* dark grey */
+    color: #f5f5f5; /* light grey */
+}
+
+.projects-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.project-item {
+  text-align: left;
+  flex: 0 1 calc(100% - 60px);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #d3d3d3; /* light grey */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-left: 5px solid #1976D2;
+
+  margin-bottom: 0px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  flex: 0 1 50%;
+  background-color: #d3d3d3;
+}
+
+.card-body {
+  flex: 0 1 50%;
+  font-family: 'Times New Roman', serif;
+}
+
+.project-name {
+  color: #FF5722;
+  font-size: 1.7em;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', serif;
+}
+
+.btn-project-link {
+  display: inline-block;
+  /* background-color: #007bff; */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/*.major,
+.dates,
+.concentration,
+.gpa {
+  font-size: 1em;
+  margin-bottom: 10px;
+}*/
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.8em;
+}

@@ -1,17 +1,4 @@
-<!-- <div class="container">
-    <h1>Projects</h1>
-    <div *ngFor="let proj of projs">
-      <p>Project Title: {{ proj.proj_name }}</p>
-      <p>Location: {{ proj.location }}</p>
-      <p>Start Date: {{ proj.startDate }}</p>
-      <p>End Date: {{ proj.endDate }}</p>
-      <p>Description: {{ proj.description }}</p>
-      <hr>
-    </div>
-</div>-->
-
-<app-header></app-header>
-
+<!-- <app-header></app-header>
 <div class="container">
   <div class="project-card" *ngFor="let proj of projs">
     <div class="project-content">
@@ -20,4 +7,33 @@
       <a [routerLink]="'/projects/' + proj._id" class="btn">View Project</a>
     </div>
   </div>
-</div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<app-header></app-header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="projects.component.css">
+</head>
+<body>
+    <section class="projects-section">
+        <div class="projects-container">
+            <div class="project-item" *ngFor="let proj of projs">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="project-name"> {{ proj.proj_name }} </h2>
+                        <h3 class="project-description">{{ proj.description }}</h3>
+                    </div>
+                    <div class="card-body">
+                      <a [routerLink]="'/projects/' + proj._id" class="btn-project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for each education item -->
+        </div>
+    </section>
+</body>
+</html>

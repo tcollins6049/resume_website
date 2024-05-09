@@ -1,14 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
 <app-header></app-header>
-<div class="container">
-    <h1>Education</h1>
-    <div *ngFor="let ed of edu">
-      <p>Company: {{ ed.University }}</p>
-      <p>Degree: {{ ed.degreeType }}</p>
-      <p>Start Date: {{ ed.startDate }}</p>
-      <p>End Date: {{ ed.endDate }}</p>
-      <p>Concentration: {{ ed.concentration }}</p>
-      <p>GPA: {{ ed.gpa }}</p>
-      <p>Description: {{ ed.description }}</p>
-      <hr>
-    </div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="education-comp.component.css">
+</head>
+<body>
+    <section class="education-section">
+        <div class="education-container">
+            <div class="education-item" *ngFor="let e of edu">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="university"> {{ e.University }} </h2>
+                        <h3 class="degree">Bachelor of Science</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="major">Computer Science</p>
+                        <p class="dates">September 2015 - May 2019</p>
+                        <p class="concentration">Concentration: {{ e.concentration }}</p>
+                        <p class="gpa">GPA: {{ e.gpa }} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item" *ngFor="let e of edu">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="university"> {{ e.University }} </h2>
+                        <h3 class="degree">Bachelor of Science</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="major">Computer Science</p>
+                        <p class="dates">September 2015 - May 2019</p>
+                        <p class="concentration">Concentration: {{ e.concentration }}</p>
+                        <p class="gpa">GPA: {{ e.gpa }} </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for each education item -->
+        </div>
+    </section>
+</body>
+</html>
+
