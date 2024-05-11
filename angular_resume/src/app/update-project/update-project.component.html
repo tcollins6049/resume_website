@@ -1,0 +1,9 @@
+<form (ngSubmit)="updateProject()">
+    <label for="proj_name">Project Name:</label>
+    <input type="text" id="proj_name" name="proj_name" [(ngModel)]="project.proj_name" required>
+  
+    <!-- Add input fields for other project properties as needed -->
+  
+    <button type="submit">Update Project</button>
+  </form>
+  

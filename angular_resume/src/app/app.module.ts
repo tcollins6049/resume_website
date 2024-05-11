@@ -11,6 +11,9 @@ import { EducationComponent } from './education-comp/education-comp.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HeaderComponent } from './header/header.component';
+import { AddProjectComponent } from './add-project/add-project.component';
+import { FormsModule } from '@angular/forms';
+import { UpdateProjectComponent } from './update-project/update-project.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,16 @@ import { HeaderComponent } from './header/header.component';
     ProjectsComponent,
     ProjectDetailsComponent,
     HeaderComponent,
+    AddProjectComponent,
+    UpdateProjectComponent,
     // HttpClientModule
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

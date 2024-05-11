@@ -1,4 +1,4 @@
-* {
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Times New Roman', serif;
-    background-color: #2196F3; /* dark grey */
-    color: #f5f5f5; /* light grey */
+    background-color: #2196F3;
+    color: #f5f5f5;
 }
 
 .projects-section {
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #d3d3d3; /* light grey */
+  background-color: #d3d3d3;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -74,7 +74,6 @@ body {
 
 .btn-project-link {
   display: inline-block;
-  /* background-color: #007bff; */
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -86,13 +85,6 @@ body {
   background-color: #0056b3;
 }
 
-/*.major,
-.dates,
-.concentration,
-.gpa {
-  font-size: 1em;
-  margin-bottom: 10px;
-}*/
 
 .footer {
   background-color: #333;
@@ -109,4 +101,11 @@ body {
 .footer-text {
   margin: 0;
   font-size: 0.8em;
+}*/
+
+
+body {
+  padding-top: 3.5rem;
 }
+
+
